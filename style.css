@@ -1,0 +1,169 @@
+/* Add your custom styles here */
+
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+
+  .dot {
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    pointer-events: none;
+    transition: opacity 0.5s linear;
+}
+
+  h1 {
+    font-size: 3em;
+    margin-top: 0px;
+    text-align: left;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+  
+  ul {
+    padding-left: 20px;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: left;
+    height: 60vh;
+    padding: 20px 5%;
+    background-color: #f2f2f2;
+  }
+
+  header span {
+    font-size: 1.5em;
+    margin-right: auto;
+  }
+
+  header p {
+    font-size: 1em;
+  }
+
+  .navbar {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 100px;
+    background-color:#f2f2f2;
+    z-index: 10;
+  }
+
+  .navbar_list {
+    list-style: none;
+  }
+
+  .navbar_list-item {
+    margin: 25px 0px;
+    position: relative;
+    align-items: center;
+  }
+
+    section {
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: auto;
+    margin: auto;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+  }
+
+.spacer {
+  height: 1px;
+  width: 100%;
+  border: black 1px solid;
+}
+
+  .sectionContent_wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+  }
+
+  .sectionContent {
+    width: auto;
+    /* border: red 1px solid; */
+  }
+
+  .sectionHeading {
+    width: 25%;
+    margin-bottom: auto;
+  }
+
+  /* first section styles */
+  .subContent {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .subContent_inner {
+    margin-bottom: 25px;
+  }
+
+  .subContent_span {
+    margin-top: 0px;
+  }
+
+  .subContent_heading-three {
+    min-width: 30%;
+    margin-right: 20px;
+    margin-top: 25px;
+  }
+
+  .subContent_paragraph {
+    max-width: 40em;
+    margin-right: auto;
+    margin-top: 25px;
+  }
+
+  .subContent_list {
+    width: 20em;
+    margin: 25px auto;
+  }
+
+  footer {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+  }
+
+
+  /* navbar image animation styles */
+  .navbar_list-item__image {
+    position: relative;
+    width: 50px;
+    z-index: 2;
+  }
+
+  .mailBlue, .fbBlue, .ghBlue, .phoneBlue{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .mailRed, .fbRed, .ghRed, .phoneRed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
