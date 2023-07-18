@@ -242,7 +242,11 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      font-size: 1em;
+      font-size: 1.25em;
+    }
+
+    .navbar {
+      display: none;
     }
   
     h1 {
