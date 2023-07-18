@@ -136,7 +136,9 @@ body {
   }
 
   .subContent_paragraph {
-    max-width: 40em;
+    font-size: 1em;
+    width: 100%;
+    max-width: none;
     margin: auto;
     margin-top: 25px;
   }
@@ -229,6 +231,62 @@ body {
 
     .subContent_list {
       width: 20em;
+      margin: 25px auto;
+    }
+  }
+
+
+  @media screen and (min-width: 100px) and (max-width: 600px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-size: 1em;
+    }
+  
+    h1 {
+      font-size: 3em;
+    }
+  
+    h2 {
+      font-size: 2em;
+      text-align: center;
+    }
+  
+    header {
+      height: auto;
+      padding: 20px;
+    }
+
+    section {
+      flex-direction: column;
+    }
+  
+    .sectionContent_wrapper {
+      width: 100%;
+    }
+  
+    .sectionHeading {
+      width: 100%;
+      margin: auto;
+      margin-bottom: 25px;
+      
+    }
+
+    .subContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .subContent_heading-three {
+      min-width: 100%;
+      text-align: center;
+    }
+
+    .subContent_list {
+      width: 100%;
       margin: 25px auto;
     }
   }
