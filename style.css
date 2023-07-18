@@ -89,6 +89,7 @@ body {
 .spacer {
   height: 1px;
   width: 100%;
+  margin: 25px 0px;
   border: black 1px solid;
 }
 
@@ -128,15 +129,26 @@ body {
     margin-top: 25px;
   }
 
+  .subContent_heading-four {
+    min-width: 100%;
+    text-align: center;
+    margin: 15px auto;
+  }
+
   .subContent_paragraph {
     max-width: 40em;
-    margin-right: auto;
+    margin: auto;
     margin-top: 25px;
   }
 
   .subContent_list {
     width: 20em;
     margin: 25px auto;
+  }
+
+  .subContent_span {
+    width: 100%;
+    text-align: center;
   }
 
   footer {
@@ -167,3 +179,56 @@ body {
     z-index: 1;
   }
 
+  @media (max-width: 1000px) {
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    h1 {
+      font-size: 2.5em;
+    }
+  
+    h2 {
+      font-size: 1.5em;
+      text-align: center;
+    }
+  
+    header {
+      height: auto;
+      padding: 20px;
+    }
+
+    section {
+      flex-direction: column;
+    }
+  
+    .sectionContent_wrapper {
+      width: 100%;
+    }
+  
+    .sectionHeading {
+      width: 100%;
+      margin: auto;
+      margin-bottom: 25px;
+      
+    }
+
+    .subContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .subContent_heading-three {
+      min-width: 100%;
+      text-align: center;
+    }
+
+    .subContent_list {
+      width: 20em;
+      margin: 25px auto;
+    }
+  }
