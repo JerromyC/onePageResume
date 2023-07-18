@@ -245,18 +245,17 @@ body {
     body {
       display: flex;
       flex-direction: column;
-      font-size: 1.5em;
-      background-color: #FF0000;
+      font-size: 2em;
     }
   
     h1 {
-      font-size: 2.5em;
+      font-size: 4em;
       line-height: 1.0;
       color: white;
     }
   
     h2 {
-      font-size: 2em;
+      font-size: 3em;
       text-align: center;
     }
   
