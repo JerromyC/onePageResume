@@ -246,6 +246,7 @@ body {
       display: flex;
       flex-direction: column;
       font-size: 1.5em;
+      background-color: #FF0000;
     }
   
     h1 {
