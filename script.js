@@ -52,13 +52,12 @@ mainImages.forEach(image => {
     let imageRed = document.querySelector(`.${imageClass}Red`); // Append "Red" to the class and select
 
     image.addEventListener("mouseover", () => {
-        imageBlue.style.left = "-5px";
-        imageRed.style.left = "5px";
+        imageBlue.style.left = "-2.5px";
+        imageRed.style.left = "2.5px";
     });
 
     image.addEventListener("mouseout", () => {
         imageBlue.style.left = "0";
         imageRed.style.left = "0";
     });
-});
-  
+}); 
