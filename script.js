@@ -61,3 +61,4 @@ mainImages.forEach(image => {
         imageRed.style.left = "0";
     });
 });
+  
