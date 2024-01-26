@@ -68,7 +68,7 @@ header p {
   z-index: 10;
 }
 
-.navbar_list {
+.navbarList {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -77,17 +77,17 @@ header p {
   padding-right: 15px;
 }
 
-.navbar_list-item {
+.navbarList-item {
   margin: auto;
   position: relative;
 }
 
-.navbar_list-item__image_wrapper {
+.hoverImage-wrapper {
   max-width: 50px;
   margin: auto;
 }
 
-.navbar_list-item__image {
+.hoverImage {
   position: relative;
   width: 50px;
   z-index: 2;
@@ -110,7 +110,7 @@ header p {
 
 section {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: auto;
   height: auto;
   margin: auto;
@@ -140,7 +140,7 @@ section {
   border: #00FFFF66 1px solid;
 }
 
-.sectionContent_wrapper {
+.sectionContent-container {
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -152,7 +152,8 @@ section {
 
 .sectionHeading {
   width: 25%;
-  margin-bottom: auto;
+  margin-bottom: 50px;
+  text-align: center;
 }
 
 /* first section styles */
@@ -161,27 +162,27 @@ section {
   flex-direction: row;
 }
 
-.subContent_inner {
+.subContent-inner {
   margin-bottom: 25px;
 }
 
-.subContent_span {
+.subContent-span {
   margin-top: 0px;
 }
 
-.subContent_heading-three {
+.subContent-headingThree {
   min-width: 30%;
   margin-right: 20px;
   margin-top: 25px;
 }
 
-.subContent_heading-four {
+.subContent-headingFour {
   min-width: 100%;
   text-align: center;
   margin: 15px auto;
 }
 
-.subContent_paragraph {
+.subContent-paragraph {
   font-size: 1em;
   width: 100%;
   max-width: none;
@@ -189,14 +190,46 @@ section {
   margin-top: 25px;
 }
 
-.subContent_list {
+.subContent-list {
   width: 20em;
   margin: 25px auto;
 }
 
-.subContent_span {
+.subContent-span {
   width: 100%;
   text-align: center;
+}
+
+.subContent-innerWrapper {
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+  display: flex;
+  flex-direction: row;
+}
+
+.subContent-imageWrapper {
+  width: 60%;
+  height: auto;
+  min-height: 250px;
+  border: red 2px solid;
+  background-image: url(assets/synergyFoundry.JPG);
+  background-size: cover;
+  background-position: center;
+}
+
+.subContent-innerWrapper-links {
+  position: relative;
+  width: 40%;
+  height: auto;
+}
+
+.project-codeLink {
+  position: absolute;
+  bottom: 40%;
+  right: 40%;
+  width: 20%;
+  height: 20%;
 }
 
 footer {
@@ -242,18 +275,18 @@ footer {
     z-index: 10;
   }
 
-  .navbar_list {
+  .navbarList {
     flex-direction: row;
     justify-content: space-evenly;
     height: auto;
     width: 100%;
   }
 
-  .navbar_list-item {
+  .navbarList-item {
     margin: auto 10px;
   }
 
-  .navbar_list-item__image {
+  .hoverImage {
     margin: auto;
   }
 
@@ -261,7 +294,7 @@ footer {
     flex-direction: column;
   }
 
-  .sectionContent_wrapper {
+  .sectionContent-container {
     width: 100%;
   }
 
@@ -277,12 +310,12 @@ footer {
     justify-content: center;
   }
 
-  .subContent_heading-three {
+  .subContent-headingThree {
     min-width: 100%;
     text-align: center;
   }
 
-  .subContent_list {
+  .subContent-list {
     width: 20em;
     margin: 25px auto;
   }
@@ -336,7 +369,7 @@ footer {
     flex-direction: column;
   }
 
-  .sectionContent_wrapper {
+  .sectionContent-container {
     width: 100%;
   }
 
@@ -352,12 +385,12 @@ footer {
     justify-content: center;
   }
 
-  .subContent_heading-three {
+  .subContent-headingThree {
     min-width: 100%;
     text-align: center;
   }
 
-  .subContent_list {
+  .subContent-list {
     width: 100%;
     margin: 25px auto;
   }

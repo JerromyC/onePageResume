@@ -43,21 +43,50 @@ window.onload = function() {
 }
 
 // Get all main images
-let mainImages = document.querySelectorAll('.navbar_list-item__image:not(.mailBlue):not(.mailRed):not(.fbBlue):not(.fbRed):not(.ghBlue):not(.ghRed):not(.phoneBlue):not(.phoneRed)');
+// let mainImages = document.querySelectorAll('.hoverImage:not(.mailBlue):not(.mailRed):not(.fbBlue):not(.fbRed):not(.ghBlue):not(.ghRed):not(.phoneBlue):not(.phoneRed)');
 
-// Add event listeners to each image
-mainImages.forEach(image => {
-    let imageClass = image.className.split(' ')[1]; // Get the second class (e.g., "mail", "fb", etc.)
-    let imageBlue = document.querySelector(`.${imageClass}Blue`); // Append "Blue" to the class and select
-    let imageRed = document.querySelector(`.${imageClass}Red`); // Append "Red" to the class and select
+// // Add event listeners to each image
+// mainImages.forEach(image => {
+//     let imageClass = image.className.split(' ')[1]; // Get the second class (e.g., "mail", "fb", etc.)
+//     let imageBlue = document.querySelector(`.${imageClass}Blue`); // Append "Blue" to the class and select
+//     let imageRed = document.querySelector(`.${imageClass}Red`); // Append "Red" to the class and select
 
-    image.addEventListener("mouseover", () => {
-        imageBlue.style.left = "-2.5px";
-        imageRed.style.left = "2.5px";
-    });
+//     image.addEventListener("mouseover", () => {
+//         imageBlue.style.left = "-2.5px";
+//         imageRed.style.left = "2.5px";
+//     });
 
-    image.addEventListener("mouseout", () => {
-        imageBlue.style.left = "0";
-        imageRed.style.left = "0";
-    });
-}); 
+//     image.addEventListener("mouseout", () => {
+//         imageBlue.style.left = "0";
+//         imageRed.style.left = "0";
+//     });
+// }); 
+
+document.querySelectorAll('.hoverImage-wrapper').forEach(wrapper => {
+    // Find the main image
+    let mainImage = wrapper.querySelector('.hoverImage');
+
+    if (mainImage) {
+        // Extract the specific class of the main image (e.g., 'mail', 'fb', 'gh', 'phone')
+        let mainImageClass = mainImage.classList[1];
+
+        // Construct the class names for the blue and red images based on the main image class
+        let imageBlueClass = mainImageClass + 'Blue';
+        let imageRedClass = mainImageClass + 'Red';
+
+        // Find the corresponding blue and red images within the same wrapper
+        let imageBlue = wrapper.querySelector('.' + imageBlueClass);
+        let imageRed = wrapper.querySelector('.' + imageRedClass);
+
+        // Add hover effects
+        mainImage.addEventListener("mouseover", () => {
+            if (imageBlue) imageBlue.style.left = "-2.5px";
+            if (imageRed) imageRed.style.left = "2.5px";
+        });
+
+        mainImage.addEventListener("mouseout", () => {
+            if (imageBlue) imageBlue.style.left = "0";
+            if (imageRed) imageRed.style.left = "0";
+        });
+    }
+});
